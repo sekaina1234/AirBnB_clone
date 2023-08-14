@@ -46,11 +46,11 @@ class BaseModel:
         """ Method to retrieve a dictionary containing
         all attributes and their values for the instance.
         """
-        NewDict = {}
+        new_dict = {}
         for k, v in self.__dict__.items():
             if k in ["created_at", "updated_at"]:
-                NewDict[k] = v.isoformat()
+                new_dict[k] = v.isoformat()
             else:
-                NewDict[k] = v
-        NewDict['__class__'] = self.__class__.__name__
-        return NewDict
+                new_dict[k] = v
+        new_dict['__class__'] = self.__class__.__name__
+        return new_dict
