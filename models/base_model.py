@@ -30,18 +30,20 @@ class BaseModel:
                     setattr(self, k, v)
 
     def __str__(self):
-        """Method to obtain a string representation of the selected attribute."""
+        """Method to obtain a string representation
+        of the selected attribute.
+        """
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
 
     def save(self):
-        """Method for refreshing the 'updated_at' public 
+        """Method for refreshing the 'updated_at' public
            instance attribute with the current timestamp.
         """
         self.updated_at = datetime.now()
         storage.save()
 
     def to_dict(self):
-        """ Method to retrieve a dictionary containing 
+        """ Method to retrieve a dictionary containing
         all attributes and their values for the instance.
         """
         NewDict = {}

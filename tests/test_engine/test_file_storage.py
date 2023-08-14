@@ -18,6 +18,7 @@ class TestFileStorage(unittest.TestCase):
         cls.file_path = "test_file.json"
         cls.storage = FileStorage()
         cls.storage._FileStorage__file_path = cls.file_path
+
     @classmethod
     def tearDownClass(cls):
         if os.path.exists(cls.file_path):

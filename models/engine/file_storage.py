@@ -4,14 +4,13 @@ import os
 import json
 
 
-
 class FileStorage:
     """FileStorage class for storing and retrieving data
      Args:
         __file_path: The string - path to the JSON file (ex: file.json)
         __objects: The dictionary - empty, but will store all objects
-                   by <class name>.id 
-                   (ex: to store a BaseModel object with id=12121212,
+                   by <class name>.id
+                   (ex: to store a BaseModel object with id=1212121
                    the key will be BaseModel.12121212)
     """
 
