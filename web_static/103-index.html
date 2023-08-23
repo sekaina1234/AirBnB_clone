@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Accessible Header, Footer, Filters, and Places</title>
+  <link rel="stylesheet" type="text/css" href="styles/103-common.css">
+  <link rel="stylesheet" type="text/css" href="styles/103-header.css">
+  <link rel="stylesheet" type="text/css" href="styles/103-footer.css">
+  <link rel="stylesheet" type="text/css" href="styles/103-filters.css">
+  <link rel="stylesheet" type="text/css" href="styles/103-places.css">
+  <link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="AirBnB Logo">
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="filters">
+      <div class="locations">
+        <h3>States</h3>
+        <ul class="popover">
+          <li>
+            <h2>State 1</h2>
+            <ul class="sub-popover">
+              <li>City 1</li>
+              <li>City 2</li>
+            </ul>
+          </li>
+          <li>
+            <h2>State 2</h2>
+            <ul class="sub-popover">
+              <li>City 3</li>
+              <li>City 4</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="amenities">
+        <h3>Amenities</h3>
+        <ul class="popover">
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+      </div>
+      <button class="search-button">Search</button>
+    </section>
+
+    <section class="places">
+      <h1>Places</h1>
+      <article class="place">
+        <h2>Place 1</h2>
+        <div class="price_by_night">$100</div>
+        <div class="information">
+          <div class="max_guest">
+            <i class="fas fa-users"></i> Guests: 4
+          </div>
+          <div class="number_rooms">
+            <i class="fas fa-bed"></i> Bedrooms: 2
+          </div>
+          <div class="number_bathrooms">
+            <i class="fas fa-bath"></i> Bathrooms: 2
+          </div>
+        </div>
+        <div class="user">
+          <strong>Owner:</strong> John Doe
+        </div>
+        <div class="description">
+          Description of the place goes here.
+        </div>
+        <div class="amenities">
+          <h2>Amenities</h2>
+          <ul class="amenities-list">
+            <li><i class="fas fa-paw"></i> Pet friendly</li>
+            <li><i class="fas fa-tv"></i> TV</li>
+            <li><i class="fas fa-wifi"></i> Wifi</li>
+            <!-- Add more amenities here -->
+          </ul>
+        </div>
+        <div class="reviews">
+          <h2>Reviews</h2>
+          <ul class="reviews-list">
+            <li>
+              <h3>From Bob Dylan the 27th January 2017</h3>
+              <p>This place was amazing. Highly recommended!</p>
+            </li>
+            <!-- Add more reviews here -->
+          </ul>
+        </div>
+      </article>
+      <!-- Add more place articles here -->
+    </section>
+  </div>
+
+  <footer>
+    <h2>Best School</h2>
+  </footer>
+</body>
+</html>
