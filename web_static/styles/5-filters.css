@@ -1,0 +1,38 @@
+/* Filters section style */
+.filters {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+/* Location and Amenities style */
+.locations,
+.amenities {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.locations {
+  border-right: 1px solid #DDDDDD;
+}
+
+/* Title style */
+h3 {
+  font-weight: 600;
+}
+
+/* Subtitle style */
+h4 {
+  font-weight: 400;
+  font-size: 14px;
+}
