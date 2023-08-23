@@ -1,0 +1,18 @@
+/* Header style */
+header {
+  background-color: #FF0000;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.logo {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  vertical-align: middle;
+}
